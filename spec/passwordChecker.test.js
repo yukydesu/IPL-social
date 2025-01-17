@@ -42,15 +42,25 @@ describe("Test for the function verifyUniqueName", () => {
       expect(result).toBe(false);
     });
 
-        // Doit contenir au moins un charactère spécial
-        it("should return false if password does not contain a special character", () => {
-          // arrange
-          let password = "12345678";
-          // act
-          let result = main.isPasswordSpecialCharacter(password);
-          // assert
-          expect(result).toBe(false);
-        });
+      // Doit contenir au moins un charactère spécial
+      it("should return false if password does not contain a special character", () => {
+        // arrange
+        let password = "12345678";
+        // act
+        let result = main.isPasswordSpecialCharacter(password);
+        // assert
+        expect(result).toBe(false);
+      });
+
+      // c.	Il doit contenir au moins un chiffre.
+      it("should return false if password does not contain a number", () => {
+        // arrange
+        let password = "abcdefgh";
+        // act
+        let result = main.isPasswordNumber(password);
+        // assert
+        expect(result).toBe(false);
+      });
 
 
 

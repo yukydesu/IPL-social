@@ -23,6 +23,15 @@ export class Main {
         // Teste si le mot de passe contient au moins un caractère spécial
         return specialCharacters.test(password);
     }
+
+    // should return false if password does not contain a number
+    isPasswordNumber(password) {
+        // Liste des chiffres
+        const numbers = /[0-9]/;
+
+        // Teste si le mot de passe contient au moins un chiffre
+        return numbers.test(password);
+    }
 }
 
 export default Main;
