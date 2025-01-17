@@ -32,6 +32,12 @@ export class Main {
         // Teste si le mot de passe contient au moins un chiffre
         return numbers.test(password);
     }
+
+    // d.	Il ne peut pas contenir la chaine de caractère « IPL » quel que soit sa casse (majuscule ou minuscule).
+    isPasswordIPL(password) {
+        // Teste si le mot de passe contient la chaine de caractère « IPL »
+        return !password.toLowerCase().includes("ipl");
+    }
 }
 
 export default Main;

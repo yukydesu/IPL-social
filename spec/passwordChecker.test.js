@@ -1,6 +1,6 @@
 import { Main } from "../src/passwordChecker.js";
 
-describe("Test for the function verifyUniqueName", () => {
+describe("all methode", () => {
   const main = new Main();
 
     it("should return true", function () {
@@ -62,6 +62,16 @@ describe("Test for the function verifyUniqueName", () => {
         expect(result).toBe(false);
       });
 
+
+      // d.	Il ne peut pas contenir la chaine de caractère « IPL » quel que soit sa casse (majuscule ou minuscule).
+      it("should return false if password contains IPL", () => {
+        // arrange
+        let password = "IPL12345";
+        // act
+        let result = main.isPasswordIPL(password);
+        // assert
+        expect(result).toBe(false);
+      });
 
 
 });
