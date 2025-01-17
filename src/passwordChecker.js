@@ -17,7 +17,11 @@ export class Main {
 
     // Doit contenir au moins un charactère spécial
     isPasswordSpecialCharacter(password) {
-        return false;
+        // Liste des caractères spéciaux courants
+        const specialCharacters = /[!@#$%^&*(),.?":{}|<>]/;
+
+        // Teste si le mot de passe contient au moins un caractère spécial
+        return specialCharacters.test(password);
     }
 }
 
