@@ -8,6 +8,12 @@ export class Main {
         return false;
 
     }
+
+    // la fonction doit verifier la longuer du mot de passe
+    // il doit contenir au moins 8 charactères
+    isPasswordLength(password) {
+        return password.length >= 8;
+    }
 }
 
 export default Main;

@@ -22,4 +22,14 @@ describe("Test for the function verifyUniqueName", () => {
       expect(result).toBe(false);
     });
 
+    it("should return false if password is less than 8 characters", () => {
+      // arrange
+      let password = "2345678";
+      // act
+      let result = main.isPasswordLength(password);
+      // assert
+      expect(result).toBe(false);
+    });
+
+
 });
