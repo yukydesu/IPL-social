@@ -1,9 +1,21 @@
 {
   "dependencies": {
-    "jasmine": "^5.5.0"
+    "jasmine": "^5.5.0",
+    "tdd-ipl": "file:"
   },
   "scripts": {
     "start": "nodemon app.js",
     "test": "jasmine"
+  },
+  "name": "berlin-clock",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "author": "Kyllian-Delbauche, Sohib-ElHemdi, Sebastian-Silvestrean",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^5.4.0"
   }
+
 }
