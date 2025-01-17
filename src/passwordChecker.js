@@ -14,6 +14,11 @@ export class Main {
     isPasswordLength(password) {
         return password.length >= 8;
     }
+
+    // Doit contenir au moins un charactère spécial
+    isPasswordSpecialCharacter(password) {
+        return false;
+    }
 }
 
 export default Main;
