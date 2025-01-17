@@ -1,4 +1,4 @@
-import { Main } from "../src/app.js";
+import { Main } from "../src/passwordChecker.js";
 
     it("should return true", function () {
       // act
